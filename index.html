@@ -1,54 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Chrome Dashboard" />
-        <title>My Dashboard</title>
-        <link rel="stylesheet" href="index.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />   
-    </head>
-    <body>
-       <main>
-          <div class="top">
-            <div class="container">
-                <h2>- To Do -</h2>
-                <form class="todo-form">
-                  <div class="form-wrapper">
-                    <input type="text" name="name" id="input" onfocus="this.value=''">
-                  </div>
-                  <div class="form-wrapper">
-                    <button type="submit">Add</button>
-                  </div>
-                </form>
-                <div class="todo-stats">
-                  <div class="total-tasks">
-                    Total: <span>0</span>
-                  </div>
-                  <div class="completed-tasks">
-                    Completed: <span>0</span>
-                  </div>
-                  <div class="remaining-tasks">
-                    Remaining: <span>0</span>
-                  </div>
-                </div>
-                <ol class="todo-list"></ol>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chrome Dashboard" />
+    <title>My Dashboard</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="top">
+        <div class="container">
+          <h2>𝕸𝖊𝖒𝖔</h2>
+          <form class="todo-form">
+            <div class="form-wrapper">
+              <input
+                type="text"
+                name="name"
+                id="input"
+                onfocus="this.value=''"
+              />
             </div>
-            
-            <div id="geo">   
-              <p id="weather"></p>
-              <div id="location"></div>     
+            <div class="form-wrapper">
+              <button type="submit">Add</button>
             </div>
-          </div> 
-
-          <div id="time"></div>
-
-          <div class="bottom">
-            <div id="img-author"></div>
-            <div id="quote">Quote</div>
+          </form>
+          <div class="todo-stats">
+            <div class="total-tasks">Total: <span>0</span></div>
+            <div class="completed-tasks">Completed: <span>0</span></div>
+            <div class="remaining-tasks">Remaining: <span>0</span></div>
           </div>
-       </main>
+          <ol class="todo-list"></ol>
+        </div>
 
-       <script src="build\src\index.js" ></script>
-    </body>
+        <div id="geo">
+          <p id="weather"></p>
+          <div id="location"></div>
+        </div>
+      </div>
+
+      <div id="time"></div>
+
+      <div class="bottom">
+        <div id="img-author"></div>
+        <div id="quote">Quote</div>
+      </div>
+    </main>
+
+    <script src="build\src\index.js"></script>
+  </body>
 </html>
