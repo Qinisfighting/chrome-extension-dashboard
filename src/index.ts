@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 //to do list
 const todoForm: HTMLElement = document.querySelector('.todo-form')!;
@@ -12,7 +13,6 @@ const remainingTasks: HTMLElement | null = document.querySelector(
 )!;
 
 interface Task {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   id: any;
   name: string;
   isCompleted: boolean;
