@@ -178,8 +178,7 @@ setInterval(getDateTime, 1000);
 //weather
 navigator.geolocation.getCurrentPosition((pos: GeolocationPosition) => {
   async function getWeather(): Promise<void> {
-    const APIKey = 'b0c6dd1560b603095aed754d5d1756d0';
-    const APIUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}&appid=${APIKey}&units=metric`;
+    const APIUrl = `/.netlify/functions/weather?lat=${pos.coords.latitude}&lon=${pos.coords.longitude}`;
     try {
       const res: Response = await fetch(APIUrl);
       const data: any = await res.json();
