@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 //to do list
 const todoForm: HTMLElement = document.querySelector('.todo-form')!;
