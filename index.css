@@ -125,14 +125,29 @@ input:focus {
 }
 
 .todo-list .remove-task {
-  width: 18px;
-  height: 18px;
-  padding: 2.5px;
+  all: unset;
+  width: 13px;
+  height: 13px;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 0.5em;
+  border: 1px ridge white;
   border-radius: 50%;
-  border: 1px white ridge;
+  font-weight: 100;
+  background-color: white;
   cursor: pointer;
-  margin-right: 15px;
+  margin-left: 10px;
+  margin-right: 20px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.todo-list .remove-task:hover {
+  background-color: whitesmoke;
+  transform: scale(1.1);
 }
 
 .bottom {

@@ -148,7 +148,7 @@ async function setbackgroundImage(): Promise<void> {
     const data = await res.json();
     const imgURL: string = data.urls.full;
     const imgAuthor: string = data.user.name;
-    const myBG = document.getElementById('img-author')!; //The ! means "trust me, this is not a null reference"
+    const myBG = document.getElementById('img-author')!;
     document.body.style.backgroundImage = `url(${imgURL})`;
     myBG.innerHTML = `<p>Photographer: ${imgAuthor}</p>`;
   } catch (error) {
